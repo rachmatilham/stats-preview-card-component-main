@@ -1,0 +1,144 @@
+:root {
+    --main-bg-color: hsl(233, 47%, 7%);
+    --card-bg-color: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --white-main: hsla(0, 0%, 100%, 0.75);
+    --white-stat: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 85px 25px;
+    border-radius: 5px;
+    background-color: var(--card-bg-color);
+}
+
+main .image {
+    order: 1;
+    width: 100%;
+    height: 250px;
+    background-image: url(images/image-header-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+main .image .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: var(--soft-violet);
+    opacity: 0.5;
+    border-radius: inherit;
+}
+
+main .content {
+    order: 2;
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+main .content h2 {
+    padding: 10px 0 20px;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 2em;
+}
+
+main .content h2 span {
+    color: var(--soft-violet);
+}
+
+main .content p {
+    color: var(--white-main);
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+main .content .stats {
+    padding-top: 20px;
+}
+
+main .content .stats p {
+    color: var(--white-stat);
+    padding-bottom: 20px;
+    font-size: 0.9em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+main .content .stats p span {
+    color: var(--white);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+footer {
+    color: var(--white);
+}
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 165px 175px;
+    }
+
+    main .image {
+        order: 2;
+        background-image: url(images/image-header-desktop.jpg);
+        width: auto;
+        height: auto;
+        border-radius: 0 5px 5px 0;
+    }
+
+    main .content {
+        order: 1;
+        text-align: left;
+        padding: 75px 120px 75px 75px;
+    }
+
+    main .content h2 {
+        font-size: 2.3em;
+    }
+
+    main .content .stats {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+
+    main .content .stats p {
+        font-family: 'Lexend Deca', sans-serif;
+        padding: 0 5px;
+    }
+
+    main .content .stats p span {
+        font-family: 'Inter', sans-serif;
+    }
+}
