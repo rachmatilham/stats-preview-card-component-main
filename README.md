@@ -28,6 +28,7 @@ Users should be able to:
 
 ### Links
 
+- Solution URL: [Solution page on Frontend Mentor](https://www.frontendmentor.io/solutions/stats-preview-card-component-TWzlhREkr)
 - Github Pages URL: [Github Pages](https://rachmatilham.github.io/stats-preview-card-component-main/)
 
 ## My process
