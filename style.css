@@ -52,7 +52,7 @@ main .content {
   padding: 20px;
 }
 
-main .content h2 {
+main .content h1 {
   padding: 20px 0;
   color: var(--white);
   font-weight: 700;
@@ -149,5 +149,11 @@ footer {
     position: absolute;
     width: 100%;
     bottom: 0;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  footer a {
+    color: hsl(228, 45%, 44%);
   }
 }
